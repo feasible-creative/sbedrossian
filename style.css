@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+
 *{
   padding: 0;
   margin: 0;
-  font-family: sans-serif;
+  font-family: Lato, sans-serif;
   color: white;
   text-decoration: none;
 
@@ -9,9 +12,14 @@
 
 
 body{
-  background-color: black;
+  background-color: white;
+  overflow-x: hidden;
 }
 
+.mobile-nav-toggle{
+  display: none;
+
+}
 
 nav ul{
   display: flex;
@@ -41,9 +49,15 @@ nav ul{
     background-color: steelblue;
     padding: min (30vh, 10rem) 2em;
     z-index: 1000;
+    transform: translateX(100%);
 
 
   }
+
+  #navigation[data-visible='true']{
+    transform: translateX(0%);
+  }
+
 
   .sr-only {
     position: absolute;
@@ -65,6 +79,7 @@ nav ul{
   }
 
   .mobile-nav-toggle{
+    display: block;
     position: absolute;
     background: url("img/menu.png");
     background-repeat: no-repeat;
