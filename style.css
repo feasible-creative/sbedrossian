@@ -1,11 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
 
+:root{
+  --clr-primary-100: #ffffff;
+  --clr-primary-200: #298ea4;
+  --clr-primary-300: #1d5c8c;
+  --clr-primary-900: #000000;
+
+}
+
+
+
 
 * {
   padding: 0;
   margin: 0;
   font-family: Lato, sans-serif;
-  color: white;
+  color: var(--clr-primary-100);
   text-decoration: none;
 
 
@@ -29,9 +39,9 @@ h3 {
 
 
 body {
-  background-color: white;
+  background-color: var(--clr-primary-100);
   overflow-x: hidden;
-  background-color: rgb(39, 99, 148);
+  background-color: var(--clr-primary-300);
   text-shadow: 0rem .25rem .25rem rgba(0, 0, 0, .25);
 }
 
@@ -58,7 +68,7 @@ nav a {
 }
 
 nav a:hover {
-  background-color: rgb(54, 139, 208);
+  background-color: var(--clr-primary-200);
   border-radius: 5rem;
   box-shadow: 0rem .25rem .25rem rgba(0, 0, 0, .25);
 
@@ -96,25 +106,28 @@ nav a:hover {
 
 .project {
   box-shadow: 0rem .25rem .25rem rgba(0, 0, 0, .25);
-  transition: all 300ms;
+  background-color: var(--clr-primary-200);
+  
 }
 
 .project-snip {
   width: 100vw;
   height: auto;
+  filter: grayscale(0);
+  transition: all 300ms;
 }
 
-.project:hover {
-  opacity: 85%;
-  box-shadow: 0rem .5rem .5rem rgba(0, 0, 0, .25);
-
+.project-snip:hover {
+  filter: grayscale(1);
 }
+
+
 
 @media (max-width: 35em) {
   #navigation {
     position: fixed;
     inset: 0 0 0 0%;
-    background-color: steelblue;
+    background-color: var(--clr-primary-300);
     padding: min (30vh, 10rem) 2em;
     z-index: 1000;
     transform: translateX(100%);
