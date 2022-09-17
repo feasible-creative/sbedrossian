@@ -170,7 +170,7 @@ nav a:hover {
   .mobile-nav-toggle {
     display: block;
     position: absolute;
-    background: url("img/menu.svg");
+    background: url("img/menu.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
@@ -186,7 +186,7 @@ nav a:hover {
   }
 
   .mobile-nav-toggle[aria-expanded='true'] {
-    background-image: url('img/close.svg');
+    background-image: url('img/close.png');
     transform: rotate(90deg);
 
   }
