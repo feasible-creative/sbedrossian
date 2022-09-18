@@ -4,6 +4,7 @@
   --clr-primary-100: #ffffff;
   --clr-primary-200: #298ea4;
   --clr-primary-300: #1d5c8c;
+  --clr-primary-400: #114d7b;
   --clr-primary-900: #000000;
 
 }
@@ -126,12 +127,13 @@ nav a:hover {
 @media (max-width: 35em) {
   #navigation {
     position: fixed;
-    inset: 0 0 0 0%;
-    background-color: var(--clr-primary-300);
+    inset: 0 0 0 20%;
+    background-color: var(--clr-primary-400);
     padding: min (30vh, 10rem) 2em;
     z-index: 1000;
     transform: translateX(100%);
     transition: transform 350ms ease-out;
+    box-shadow: 0rem .25rem .25rem rgba(0, 0, 0, .25);
 
 
   }
