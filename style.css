@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
 
-:root{
+:root {
   --clr-primary-100: #ffffff;
   --clr-primary-200: #298ea4;
   --clr-primary-300: #1d5c8c;
@@ -10,8 +10,6 @@
 }
 
 
-
-
 * {
   padding: 0;
   margin: 0;
@@ -19,8 +17,10 @@
   color: var(--clr-primary-100);
   text-decoration: none;
 
+}
 
-
+p {
+  padding: 0rem 1rem 0rem 1rem;
 }
 
 h1,
@@ -40,10 +40,15 @@ h3 {
 
 
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   background-color: var(--clr-primary-100);
   overflow-x: hidden;
   background-color: var(--clr-primary-300);
   text-shadow: 0rem .25rem .25rem rgba(0, 0, 0, .25);
+
+
 }
 
 .mobile-nav-toggle {
@@ -108,7 +113,7 @@ nav a:hover {
 .project {
   box-shadow: 0rem .25rem .25rem rgba(0, 0, 0, .25);
   background-color: var(--clr-primary-200);
-  
+
 }
 
 .project-snip {
@@ -122,6 +127,15 @@ nav a:hover {
   filter: grayscale(1);
 }
 
+.sticky-footer{
+  position: sticky;
+  top: 100%
+}
+
+footer {
+  margin-top: auto;
+  background-color: black;
+}
 
 
 @media (max-width: 35em) {
@@ -205,10 +219,6 @@ nav a:hover {
     transform: rotate(90deg);
 
   }
-
-
-
-
 
 
 
