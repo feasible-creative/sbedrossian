@@ -22,15 +22,6 @@ navToggle.addEventListener('click', () =>{
 
 
 
-// const navLink = document.querySelector('#navLink')
-
-// navLink.addEventListener('click', function(){
-//   primaryNav.setAttribute('data-visible', false)
-//   navToggle.setAttribute('aria-expanded', false)
-
-// })
-
-
 //Close navbar once link is selected
 const navLink = document.querySelectorAll('#navLink')
 
