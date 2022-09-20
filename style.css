@@ -68,7 +68,7 @@ hr{
 nav ul {
   display: flex;
   justify-content: space-between;
-  gap: var(--gap, 5rem);
+  gap: var(--gap, .5rem);
   font-weight: bold;
 
 
