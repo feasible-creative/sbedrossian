@@ -17,7 +17,7 @@
 
 <body>
 
-  <header>
+  <header id="home">
 
 
     <button class="mobile-nav-toggle" aria-controls="navigation" aria-expanded="false">
@@ -30,10 +30,10 @@
 
       <nav>
         <ul id="navigation" data-visible="false">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="mywork.html">My Work</a></li>
-          <li><a href="aboutme.html">About Me</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a id="navLink" href="#home">Home</a></li>
+          <li><a id="navLink" href="#work">My Work</a></li>
+          <li><a id="navLink" href="#about">About Me</a></li>
+          <li><a id="navLink" href="contact.html">Contact</a></li>
         </ul>
 
       </nav>
@@ -56,9 +56,96 @@
 
     <hr>
 
-    <section>
 
-      <h2>Education</h2>
+
+
+
+
+
+
+    <section id="work">
+
+      <h2>
+        Work
+      </h2>
+      <h3>Check out some of my recent projects!</h3>
+
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit nostrum odio est temporibus magni! Culpa
+        reiciendis, nobis sint aut quos nihil! Numquam possimus eligendi consectetur doloribus non, accusamus quis,
+        deserunt
+        cum placeat ea natus illum iusto excepturi velit quo ipsa laboriosam eveniet nam praesentium quibusdam. Omnis,
+        quia?
+      </p>
+      <br>
+
+
+
+      <div class="projects-container">
+
+
+        <div class="project">
+
+          <a href="https://feasiblecreative.com/"><img class="project-snip" src="img/Project_feasible.jpg"></a>
+          <h3>feasiblecreative.com</h3>
+
+        </div>
+
+
+        <div class="project">
+
+          <a href="https://feasible-creative.github.io/slotmachine/"><img class="project-snip"
+              src="img/Project_SlotMania.jpg"></a>
+          <h3>Slot Mania</h3>
+
+        </div>
+
+        <div class="project">
+
+          <a href="https://feasible-creative.github.io/odin-rock-paper-scizzors/"><img class="project-snip"
+              src="img/Project_Rock.jpg"></a>
+          <h3>Rock & Paper & Scizzors & Front-End</h3>
+
+        </div>
+
+        <div class="project">
+
+          <a href="https://feasible-creative.github.io/quick-math/"><img class="project-snip"
+              src="img/Project_Math.jpg"></a>
+          <h3>Quick Math</h3>
+
+
+        </div>
+
+
+
+      </div>
+
+
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section id="about">
+
+
+
+
+      <h2>About</h2>
+
+      <h3>Education</h3>
 
       <div class="education-container">
         <img class="education-image" src="img/psu.png">
@@ -76,7 +163,7 @@
 
 
 
-      
+
     </section>
 
 
@@ -93,7 +180,7 @@
 
   <div class="sticky-footer">
 
-    <footer>
+    <footer id="work">
 
       <div class="social-links">
         <a href="https://github.com/feasible-creative"><img class="social-img" src="img/github.png"
