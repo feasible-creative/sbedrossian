@@ -2,15 +2,15 @@ const primaryNav = document.querySelector('#navigation');
 const navToggle = document.querySelector('.mobile-nav-toggle');
 
 
-navToggle.addEventListener('click', () =>{
+navToggle.addEventListener('click', () => {
   const visibility = primaryNav.getAttribute('data-visible')
- 
-  if(visibility === 'false'){
+
+  if (visibility === 'false') {
     primaryNav.setAttribute('data-visible', true)
     navToggle.setAttribute('aria-expanded', true)
   }
 
-  else{
+  else {
     primaryNav.setAttribute('data-visible', false)
     navToggle.setAttribute('aria-expanded', false)
   }
@@ -25,11 +25,12 @@ navToggle.addEventListener('click', () =>{
 //Close navbar once link is selected
 const navLink = document.querySelectorAll('#navLink')
 
-navLink.forEach(function(item){
-  item.addEventListener('click', function(){
+navLink.forEach(function (item) {
+  item.addEventListener('click', function () {
     primaryNav.setAttribute('data-visible', false)
     navToggle.setAttribute('aria-expanded', false)
-  
+
+
 
   })
 
